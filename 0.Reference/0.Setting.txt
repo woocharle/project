@@ -1,3 +1,7 @@
 안드로이드 테블렛 
 
 virtual Devices에서 파이를 받는다. 
+
+unit card view 연구 
+
+hydraulic 은 fragment 연구
