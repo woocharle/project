@@ -67,8 +67,7 @@ public class SimpleCalculate extends AppCompatActivity {
         back_simple.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SimpleCalculate.this, MainActivity.class);
-                startActivity(intent);
+                finish();
             }
         });
 

@@ -21,8 +21,7 @@ public class UnitConverter extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(UnitConverter.this, MainActivity.class);
-                startActivity(intent);
+                finish();
             }
         });
 
