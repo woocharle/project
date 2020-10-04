@@ -9,10 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Hydraulic"></activity>
-        <activity android:name=".HeatTransfer" />
-        <activity android:name=".SimpleCalculate" />
-        <activity android:name=".UnitConverter" />
+        <activity
+            android:name=".Hydraulic"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".HeatTransfer"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".SimpleCalculate"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".UnitConverter"
+            android:screenOrientation="landscape"/>
         <activity
             android:name=".MainActivity"
             android:screenOrientation="landscape">

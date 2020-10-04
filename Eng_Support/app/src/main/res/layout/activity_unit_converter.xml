@@ -7,15 +7,34 @@
     android:orientation="vertical"
     tools:context=".UnitConverter">
 
-    <TextView
-        android:id="@+id/textView"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="475dp"
+            android:layout_marginTop="60dp"
+            android:text="Unit Converter"
+            android:textColor="#000000"
+            android:textSize="50dp" />
+
+        <ImageView
+            android:id="@+id/back_unit"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="385dp"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@android:drawable/ic_menu_revert" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
         android:orientation="horizontal">
 
         <Button
@@ -23,24 +42,25 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="add" />
+            android:layout_marginRight="140dp"
+            android:text="add"
+            android:textSize="20dp"/>
 
         <Button
             android:id="@+id/unit_delete"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="delete" />
+            android:text="delete"
+            android:textSize="20dp"/>
 
     </LinearLayout>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_unit"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
 </LinearLayout>
