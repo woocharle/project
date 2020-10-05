@@ -9,6 +9,8 @@ import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 
 import java.util.ArrayList;
 
@@ -16,6 +18,7 @@ public class HeatTransfer extends AppCompatActivity {
     ViewPager pager;
     HeatTransfer_frag1 heatTransfer_frag1;
     HeatTransfer_frag2 heatTransfer_frag2;
+    ImageView back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +35,15 @@ public class HeatTransfer extends AppCompatActivity {
         adapter.addItem(heatTransfer_frag1);
         adapter.addItem(heatTransfer_frag2);
 
+        pager.setAdapter(adapter);
+
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
     }
 
@@ -45,7 +57,16 @@ public class HeatTransfer extends AppCompatActivity {
 
         @Nullable
         @Override
-        public CharSequence getPageTitle(int position) { return super.getPageTitle(position); }
+        public String getPageTitle(int position) {
+            String page=null;
+
+            if(position == 0){
+                page = "General";
+            } else if(position == 1){
+                page =  "Fitting";
+            }
+            return page;
+        }
 
         @NonNull
         @Override

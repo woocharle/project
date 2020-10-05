@@ -9,6 +9,8 @@ import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 
 import java.util.ArrayList;
 
@@ -16,12 +18,14 @@ public class Hydraulic extends AppCompatActivity {
     ViewPager pager;
     Hydraulic_frag1 hydraulic_frag1;
     Hydraulic_frag2 hydraulic_frag2;
+    ImageView back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hydraulic);
         pager = findViewById(R.id.pager1);
+        back = findViewById(R.id.back_hydraulic);
         pager.setOffscreenPageLimit(2);
 
         MyPagerAdapter adapter = new MyPagerAdapter(getSupportFragmentManager(), 0);
@@ -31,6 +35,15 @@ public class Hydraulic extends AppCompatActivity {
 
         adapter.addItem(hydraulic_frag1);
         adapter.addItem(hydraulic_frag2);
+
+        pager.setAdapter(adapter);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
     }
 
@@ -43,7 +56,16 @@ public class Hydraulic extends AppCompatActivity {
 
         @Nullable
         @Override
-        public CharSequence getPageTitle(int position) { return super.getPageTitle(position); }
+        public String getPageTitle(int position) {
+            String page=null;
+
+            if(position == 0){
+                page = "General";
+            } else if(position == 1){
+                page =  "Fitting";
+            }
+            return page;
+        }
 
         @NonNull
         @Override

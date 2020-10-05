@@ -19,7 +19,7 @@ public class SimpleCalculate extends AppCompatActivity {
     TextView text1, text2, text3, text4,
              text5, text6, text7, text8;
 
-    ImageView back_simple;
+    ImageView back_simple, imageView1, imageView2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +28,10 @@ public class SimpleCalculate extends AppCompatActivity {
 
         btn1 = findViewById(R.id.simple_btn1);
         btn2 = findViewById(R.id.simple_btn2);
+
         back_simple = findViewById(R.id.back_simple);
+        imageView1 = findViewById(R.id.imageView1);
+        imageView2 = findViewById(R.id.imageView2);
 
         input1 = findViewById(R.id.sphere_1);
         input2 = findViewById(R.id.sphere_2);
@@ -63,6 +66,9 @@ public class SimpleCalculate extends AppCompatActivity {
         text7.setText(Html.fromHtml("m<sup>3</sup>"));
         text8 = findViewById(R.id.cylinder_text4);
         text8.setText(Html.fromHtml("m<sup>3</sup>"));
+
+        imageView1.setVisibility(View.VISIBLE);
+        imageView2.setVisibility(View.VISIBLE);
 
         back_simple.setOnClickListener(new View.OnClickListener() {
             @Override

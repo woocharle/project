@@ -22,7 +22,7 @@
             android:textSize="50dp" />
 
         <ImageView
-            android:id="@+id/back_unit"
+            android:id="@+id/back_heattrans"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginLeft="385dp"
@@ -37,9 +37,9 @@
 
         <androidx.viewpager.widget.PagerTabStrip
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="60dp"
             android:background="#B4B6B6"
-            android:textSize= "20sp"
+            android:textSize= "30dp"
             android:textColor="#fff"
             />
 
