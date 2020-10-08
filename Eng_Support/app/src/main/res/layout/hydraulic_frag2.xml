@@ -23,6 +23,24 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:text="Elbow"
+                    android:textColor="#000000"
+                    android:textSize="40dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="235dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
                     android:layout_weight="1"
                     android:text="90˚Elbow Threaded"
                     android:textColor="#000000"
@@ -32,7 +50,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="45˚Elbow Threaded"
+                    android:text="90˚Elbow Mitered"
                     android:textColor="#000000"
                     android:textSize="30dp" />
 
@@ -53,7 +71,7 @@
                     android:textSize="25dp" />
 
                 <EditText
-                    android:id="@+id/Fitting_h1"
+                    android:id="@+id/fitting_h1"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
@@ -70,7 +88,7 @@
                     android:textSize="25dp" />
 
                 <EditText
-                    android:id="@+id/Fitting_h2"
+                    android:id="@+id/fitting_h2"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
@@ -82,29 +100,12 @@
                     android:layout_width="130dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="60dp"
-                    android:text="Std (R/D=1)"
+                    android:text="1 weld 90˚"
                     android:textColor="#000000"
                     android:textSize="25dp" />
 
                 <EditText
-                    android:id="@+id/Fitting_h3"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:background="@drawable/border"
-                    android:inputType="number"
-                    android:textSize="25dp" />
-
-                <TextView
-                    android:layout_width="180dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:text="Long (R/D=1.5)"
-                    android:textColor="#000000"
-                    android:textSize="25dp" />
-
-                <EditText
-                    android:id="@+id/Fitting_h4"
+                    android:id="@+id/fitting_h7"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
@@ -121,21 +122,30 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="629dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:layout_weight="0.64"
                     android:text="90˚Elbow Flanged or Welded"
                     android:textColor="#000000"
                     android:textSize="30dp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="132dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="45˚Elbow Mitered"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:text="2 weld 45˚"
                     android:textColor="#000000"
-                    android:textSize="30dp" />
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/fitting_h8"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/border"
+                    android:inputType="number"
+                    android:textSize="25dp" />
 
             </LinearLayout>
 
@@ -154,7 +164,7 @@
                     android:textSize="25dp" />
 
                 <EditText
-                    android:id="@+id/Fitting_h5"
+                    android:id="@+id/fitting_h3"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
@@ -171,7 +181,7 @@
                     android:textSize="25dp" />
 
                 <EditText
-                    android:id="@+id/Fitting_h6"
+                    android:id="@+id/fitting_h4"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
@@ -183,12 +193,198 @@
                     android:layout_width="130dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="60dp"
+                    android:text="3 weld 30˚"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/fitting_h9"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/border"
+                    android:inputType="number"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Std (R/D=4)"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/fitting_h5"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/border"
+                    android:inputType="number"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="Long (R/D=6)"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/fitting_h6"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/border"
+                    android:inputType="number"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="239dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.8"
+                    android:text="45˚Elbow Threaded"
+                    android:textColor="#000000"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="180˚Bend"
+                    android:textColor="#000000"
+                    android:textSize="30dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Std (R/D=1)"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/fitting_h10"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/border"
+                    android:inputType="number"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="Long (R/D=1.5)"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/fitting_h11"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/border"
+                    android:inputType="number"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="460dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:text="Threaded, closed-return (R/D=1)"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/fitting_h12"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/border"
+                    android:inputType="number"
+                    android:textSize="25dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="650dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="45° Elbow Mitered"
+                    android:textColor="#000000"
+                    android:textSize="30dp" />
+
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Flanged (R/D=1)"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/fitting_h13"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="282dp"
+                    android:background="@drawable/border"
+                    android:inputType="number"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
                     android:text="1 weld 45˚"
                     android:textColor="#000000"
                     android:textSize="25dp" />
 
                 <EditText
-                    android:id="@+id/Fitting_h7"
+                    android:id="@+id/fitting_h14"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
@@ -205,7 +401,382 @@
                     android:textSize="25dp" />
 
                 <EditText
-                    android:id="@+id/Fitting_h8"
+                    android:id="@+id/fitting_h15"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/border"
+                    android:inputType="number"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="460dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:text=" All types (R/D=1.5)"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/fitting_h16"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="26dp"
+                    android:background="@drawable/border"
+                    android:inputType="number"
+                    android:textSize="25dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:text="Tee"
+                    android:textColor="#000000"
+                    android:textSize="40dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="235dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Tee(Through-branch as Elbow)"
+                    android:textColor="#000000"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Tee (Run-Through)"
+                    android:textColor="#000000"
+                    android:textSize="30dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Threaded (R/D=1)"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/fitting_h17"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/border"
+                    android:inputType="number"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="145dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="Threaded (R/D=1.5)"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/fitting_h18"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/border"
+                    android:inputType="number"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="90dp"
+                    android:text="Threaded (R/D=1)"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="94dp"
+                    android:text="Flanged (R/D=1)"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/fitting_h20"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/border"
+                    android:inputType="number"
+                    android:textSize="25dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Flanged (R/D=1)"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/fitting_h21"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/border"
+                    android:inputType="number"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="145dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="Stub in branch"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/fitting_h22"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/border"
+                    android:inputType="number"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="90dp"
+                    android:text="Stub in branch"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/fitting_h23"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/border"
+                    android:inputType="number"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:text="Valve"
+                    android:textColor="#000000"
+                    android:textSize="40dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Gate Valve"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/fitting_h24"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/border"
+                    android:inputType="number"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="Ball Valve"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/fitting_h25"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/border"
+                    android:inputType="number"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="88dp"
+                    android:text="Globe Valve"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/fitting_h26"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/border"
+                    android:inputType="number"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:text="Diaphragm"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/fitting_h27"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/border"
+                    android:inputType="number"
+                    android:textSize="25dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Angle Valve"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="- 45°"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/fitting_h28"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/border"
+                    android:inputType="number"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="- 90°"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/fitting_h29"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/border"
+                    android:inputType="number"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="58dp"
+                    android:text="Check Valve"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="- swing"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/fitting_h30"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/border"
+                    android:inputType="number"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="- left"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/fitting_h31"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
@@ -222,15 +793,23 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="130dp"
+                    android:layout_width="140dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:text="Std (R/D=1)"
+                    android:text="Plug Valve"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="- branch flow"
                     android:textColor="#000000"
                     android:textSize="25dp" />
 
                 <EditText
-                    android:id="@+id/Fitting_h9"
+                    android:id="@+id/fitting_h32"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
@@ -239,15 +818,15 @@
                     android:textSize="25dp" />
 
                 <TextView
-                    android:layout_width="180dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:text="Long (R/D=2)"
+                    android:text="- three way"
                     android:textColor="#000000"
                     android:textSize="25dp" />
 
                 <EditText
-                    android:id="@+id/Fitting_h10"
+                    android:id="@+id/fitting_h33"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
@@ -255,11 +834,140 @@
                     android:inputType="number"
                     android:textSize="25dp" />
 
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="- Straight though"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
 
-
+                <EditText
+                    android:id="@+id/fitting_h34"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/border"
+                    android:inputType="number"
+                    android:textSize="25dp" />
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:text="Reducer \u0026 Expander"
+                    android:textColor="#000000"
+                    android:textSize="40dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Reducer"
+                    android:textColor="#000000"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.95"
+                    android:text="Expander"
+                    android:textColor="#000000"
+                    android:textSize="30dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Diameter (inch)"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/fitting_h35"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/border"
+                    android:inputType="number"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="92dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="theta"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/fitting_h36"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/border"
+                    android:inputType="number"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="90dp"
+                    android:text="Diameter (inch)"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/fitting_h37"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:background="@drawable/border"
+                    android:inputType="number"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="theta"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/fitting_h19"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/border"
+                    android:inputType="number"
+                    android:textSize="25dp" />
+             </LinearLayout>
         </LinearLayout>
     </ScrollView>
 

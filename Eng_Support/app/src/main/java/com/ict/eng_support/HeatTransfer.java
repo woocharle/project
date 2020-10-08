@@ -25,6 +25,7 @@ public class HeatTransfer extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_heat_transfer);
         pager = findViewById(R.id.pager2);
+        back = findViewById(R.id.back_heattrans);
         pager.setOffscreenPageLimit(2);
 
         MyPagerAdapter adapter = new MyPagerAdapter(getSupportFragmentManager(), 0);
@@ -36,7 +37,6 @@ public class HeatTransfer extends AppCompatActivity {
         adapter.addItem(heatTransfer_frag2);
 
         pager.setAdapter(adapter);
-
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override
