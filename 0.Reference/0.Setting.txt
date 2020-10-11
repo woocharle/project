@@ -8,3 +8,10 @@ hydraulic 은 fragment 연구
 
 
 안드로이드 콤포박스: http://blog.naver.com/PostView.nhn?blogId=kimsheep1030&logNo=220262591161&parentCategoryNo=27&categoryNo=&viewDate=&isShowPopularPosts=true&from=search
+
+
+질문 
+
+fragment내에 연산 
+
+버튼을 누르면 버튼이 있는 fragment의 Edittext와 다른 fragment에 있는 Edittext를 데이터 가져와서 계산하게 하고 싶다.

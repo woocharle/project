@@ -4,4 +4,798 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="Line.No"
+                    android:textColor="#000"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/htr_lineno"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:inputType="text"
+                    android:textColor="#000"
+                    android:textSize="25dp" />
+
+                <Button
+                    android:id="@+id/htr_calculation"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Calculate"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="204dp"
+                    android:layout_height="wrap_content"
+                    android:text=" Phase"
+                    android:textColor="#000"
+                    android:textSize="25dp" />
+
+                <Spinner
+                    android:id="@+id/htr_spinner1"
+                    android:layout_width="177dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Environment:"
+                    android:textColor="#000"
+                    android:textSize="22dp" />
+
+                <RadioGroup
+                    android:id="@+id/htr_rg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/htr_rg_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bare"
+                        android:textSize="22dp" />
+
+                    <RadioButton
+                        android:id="@+id/htr_rg_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="Buried"
+                        android:textSize="22dp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:text=" Property "
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Liquid"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Vapor"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="335dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Process"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Type of Surface"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <Spinner
+                    android:id="@+id/htr_spinner2"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:text=" Temperature(˚C)"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/htr_temp1"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/htr_temp2"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/border"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="215dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Flow rate (kg/h)"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/htr_comp"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Emissivity"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/htr_em"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:text=" Density(kg/m3)"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/htr_den1"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/htr_den2"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/border"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="215dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Over Design (%)"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/htr_over"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Shape and Condition"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:text=" Viscosity(cP)"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/htr_vis1"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/htr_vis2"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/border"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="215dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Vapor fraction"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/htr_vaporfr"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000"
+                    android:textSize="25dp" />
+
+                <Spinner
+                    android:id="@+id/htr_spinner3"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:text=" Heat Capacity\n(Btu/lb˚F)"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/htr_heatcp1"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/border"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/htr_heatcp2"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/border"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="215dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text=" - Flow rate (liquid)"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/htr_flowliq"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/border"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="215dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="Convection Equation"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/htr_conv"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/border"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:text=" Thermal Conductivity\n(Btu/lb˚F ft)"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/htr_thc1"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/border"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/htr_thc2"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/border"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="215dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text=" - Flow rate (vapor)"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/htr_flowvap"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/border"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="215dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text=" Air Temp (˚F)"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/htr_airtemp"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/border"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:text="season"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <Spinner
+                    android:id="@+id/htr_spinner4"
+                    android:layout_width="259dp"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:layout_width="215dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginleft="100dp"
+                    android:text="Burial Depth (inch)"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/htr_bdepth"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="215dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Wind Velocity(mph)"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/htr_windvel"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:text=" Soil Conductivity\n(Btu/lb˚F ft)"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/htr_soilthc"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/border"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="215dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="138dp"
+                    android:text="Heated Soil Dia (inch)"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/htr_soildia"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/border"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000"
+                    android:textSize="25dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="Pipe Spec."
+                    android:textColor="#000"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text=" Complex Factor"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <Spinner
+                    android:id="@+id/htr_spinner5"
+                    android:layout_width="450dp"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text=" Equivalent Length"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/htr_eqlen"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text=" Insulation"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text=" Line Size (inch)"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <Spinner
+                    android:id="@+id/htr_spinner6"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Inside of Dia (m)"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/htr_din"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text=" Length of Pipe"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/htr_piplen"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text=" - Thickness (inch)"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/htr_insulth"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text=" schedule or class"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <Spinner
+                    android:id="@+id/htr_spinner7"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="Outside of Dia (m)"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/htr_dout"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/border"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text=" Reynold number"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/htr_reynold"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/border"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text=" - Conductivity\n (Btu/lb˚F ft)"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/htr_insulcon"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/border"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
 </LinearLayout>
