@@ -502,13 +502,13 @@
 
                 <Spinner
                     android:id="@+id/htr_spinner4"
-                    android:layout_width="259dp"
+                    android:layout_width="240dp"
                     android:layout_height="30dp" />
 
                 <TextView
                     android:layout_width="215dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginleft="100dp"
+                    android:layout_marginLeft="20dp"
                     android:text="Burial Depth (inch)"
                     android:textColor="#000"
                     android:textSize="20dp" />

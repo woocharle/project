@@ -1,9 +1,11 @@
 package com.ict.eng_support;
 
 import androidx.annotation.NonNull;
+
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
@@ -22,10 +24,12 @@ public class Hydraulic extends AppCompatActivity {
     ViewPager pager;
     Hydraulic_frag1 hydraulic_frag1;
     Hydraulic_frag2 hydraulic_frag2;
+    String[] msg;
+
     ImageView back;
     Button calculate;
-    EditText lineno, flow,
-             fitting_1, fitting_2, fitting_3, fitting_4, fitting_5, fitting_6, fitting_7, fitting_8,
+    EditText lineno, flow;
+    String   fitting_1, fitting_2, fitting_3, fitting_4, fitting_5, fitting_6, fitting_7, fitting_8,
              fitting_9, fitting_10, fitting_11, fitting_12, fitting_13, fitting_14, fitting_15, fitting_16,
              fitting_17, fitting_18, fitting_19, fitting_20, fitting_21, fitting_22, fitting_23, fitting_24,
              fitting_25, fitting_26, fitting_27, fitting_28, fitting_29, fitting_30, fitting_31, fitting_32,
@@ -34,13 +38,14 @@ public class Hydraulic extends AppCompatActivity {
     Spinner spinner1, spinner2, spinner3, spinner4;
     RadioGroup rg;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hydraulic);
+
         pager = findViewById(R.id.pager1);
         pager.setOffscreenPageLimit(2);
-        back = findViewById(R.id.back_hydraulic);
 
         MyPagerAdapter adapter = new MyPagerAdapter(getSupportFragmentManager(), 0);
 
@@ -50,8 +55,15 @@ public class Hydraulic extends AppCompatActivity {
         adapter.addItem(hydraulic_frag1);
         adapter.addItem(hydraulic_frag2);
 
-
         pager.setAdapter(adapter);
+
+        //button
+        back = findViewById(R.id.back_hydraulic);
+
+        Fragment hydraulic_frag1 = adapter.getItem(0);
+
+
+        //EditText
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,9 +72,12 @@ public class Hydraulic extends AppCompatActivity {
             }
         });
 
+
     }
 
-    class MyPagerAdapter extends FragmentStatePagerAdapter{
+    class MyPagerAdapter extends FragmentStatePagerAdapter {
+        String[] msg;
+
         ArrayList<Fragment> items = new ArrayList<>();
 
         public MyPagerAdapter(@NonNull FragmentManager fm, int behavior) { super(fm, behavior); }
@@ -88,6 +103,14 @@ public class Hydraulic extends AppCompatActivity {
 
         @Override
         public int getCount() { return items.size(); }
+
+
     }
+
+    public String[] sendFitting(){
+        String[] data = hydraulic_frag2.getFitting();
+        return data;
+    }
+
 
 }
